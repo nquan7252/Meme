@@ -1,16 +1,24 @@
 
-
-
-
 .App {
   text-align: center;
 }
-
+header{
+  color: white;
+  font-size: 8em;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.image-container{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 100px;
+  padding:0 200px
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
