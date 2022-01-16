@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Image.css'
 function Image(props) {
-    return  <div>
-        <Link to={'/id='+props.data.id}>
+    return  props.item==false?<div>
+        
+         <Link to={`/item?id=${props.data.id}`} state={props.data}>
+        {/* <Link to={{pathname:'/item',search:`?id=${props.data.id}`,state:{message:'hello'}}} > */}
         <img src={props.data.url}></img>
         <div className='meme-name'>{props.data.name}</div>
         </Link>
-    </div>
-}
+    </div>:<div><img src={props.data.url}></img>
+        <div className='meme-name'>{props.data.name}</div></div>
 
+}
 export default Image;

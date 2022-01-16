@@ -11,9 +11,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={<Home/>}>
-    </Route>
-    <Route path='/id' element={<Item/>}></Route>
+        <Route exact path='/' element={<Home/>}/>
+
+        <Route path='/item' element={<Item/>}/>
+
+  
     </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 img{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 100%;
     border: 2px solid black;
 }
 .meme-name{
