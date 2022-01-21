@@ -9,7 +9,7 @@ function Image(props) {
         <img src={props.data.url}></img>
         <div className='meme-name'>{props.data.name}</div>
         </Link>
-    </div>:<div><img src={props.data.url}></img>
+    </div>:<div style={{width:'350px'}}><img style={{height:'350px',width:'100%'}} src={props.data.url}></img>
         <div className='meme-name'>{props.data.name}</div></div>
 
 }

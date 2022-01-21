@@ -6,3 +6,11 @@
 .custom input{
     width: 100%;
 }
+#create-btn{
+    width: auto;
+}
+@media (max-width:840px){
+    .custom form {
+        width: 300px;
+    }
+}

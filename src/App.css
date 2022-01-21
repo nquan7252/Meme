@@ -2,9 +2,14 @@
 .App {
   text-align: center;
 }
-header{
+h1{
   color: white;
   font-size: 8em;
+  margin: 0;
+}
+h4{
+  margin: 0;
+ 
 }
 .App-logo {
   height: 40vmin;
@@ -17,7 +22,7 @@ header{
  
   column-gap: 50px;
   row-gap: 100px;
-  padding:0 200px
+  padding:0 3vw
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -46,5 +51,29 @@ header{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width:1330px){
+  .image-container{
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  h1{
+    font-size: 5em;
+  }
+}
+@media(max-width:500px){
+  .image-container{
+    column-gap: 5px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1{
+    font-size:4em;
+  }
+}
+@media(max-width:440px){
+  .image-container{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
